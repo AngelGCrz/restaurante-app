@@ -1,11 +1,22 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Restaurante</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú del Restaurante</title>
 </head>
 <body>
-    <h1>Bienvenido al sistema del Restaurante</h1>
-    <p>Este será el panel principal</p>
+  <h1>Gestión de Platos</h1>
+
+  <form id="form-plato">
+    <input type="text" name="nombre" placeholder="Nombre del plato" required />
+    <input type="number" name="precio" placeholder="Precio" required />
+    <button type="submit">Agregar</button>
+  </form>
+
+  <h2>Lista de platos</h2>
+  <ul id="lista-platos"></ul>
+
+  <script src="public/script.js"></script>
 </body>
 </html>
